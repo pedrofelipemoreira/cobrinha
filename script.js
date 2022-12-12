@@ -3,8 +3,8 @@ var ctx = stage.getContext("2d");
 
 document.addEventListener("keydown", keyPush)
 
-var maça = new Image();
-maça.src = '../assents/maça.png';
+var maca = new Image();
+maca.src = '../assents/maca.png';
 
 const glupSound = new Audio("../music/gulp.mp3");
 const gameOver = new Audio("../music/gameover.mp3");
@@ -54,7 +54,7 @@ function game(){
     ctx.fillRect(0,0, stage.width, stage.height);
 
 
-    ctx.drawImage(maça,ax*tp, ay*tp, tp, tp);
+    ctx.drawImage(maca,ax*tp, ay*tp, tp, tp);
 
     ctx.fillStyle = '#EDA1AB';
     for(var i = 0; i < trail.length; i++){
@@ -88,7 +88,7 @@ function game(){
         score += 10;
         level += 1;
 
-        if (level % 1 === 0){
+        if (level % 2 === 0){
             velocidadeLvel -=4;
             velocidadeCobrinha(velocidadeLvel);
         }else{
