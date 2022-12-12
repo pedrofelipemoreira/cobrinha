@@ -4,11 +4,11 @@ var ctx = stage.getContext("2d");
 document.addEventListener("keydown", keyPush)
 
 var maça = new Image();
-maça.src = 'maça.png';
+maça.src = '../assents/maça.png';
 
-const glupSound = new Audio("gulp.mp3");
-const gameOver = new Audio("gameover.mp3");
-const move = new Audio("move.mp3");
+const glupSound = new Audio("../music/gulp.mp3");
+const gameOver = new Audio("../music/gameover.mp3");
+const move = new Audio("../music/move.mp3");
 
 var over = false;
 
