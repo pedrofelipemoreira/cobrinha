@@ -3,8 +3,8 @@ var ctx = stage.getContext("2d");
 
 document.addEventListener("keydown", keyPush)
 
-var teste = new Image();
-teste.src = '../assents/maça.png';
+var maça = new Image();
+maça.src = '../assents/maça.png';
 
 const glupSound = new Audio("../music/gulp.mp3");
 const gameOver = new Audio("../music/gameover.mp3");
@@ -54,7 +54,7 @@ function game(){
     ctx.fillRect(0,0, stage.width, stage.height);
 
 
-    ctx.drawImage(teste,ax*tp, ay*tp, tp, tp);
+    ctx.drawImage(maça,ax*tp, ay*tp, tp, tp);
 
     ctx.fillStyle = '#EDA1AB';
     for(var i = 0; i < trail.length; i++){
