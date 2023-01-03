@@ -4,15 +4,15 @@ var ctx = stage.getContext("2d");
 document.addEventListener("keydown", keyPush)
 
 var maca = new Image();
-maca.src = '../static/images/maca1.png';
+maca.src = './images/maca1.png';
 
 var fundo = new Image();
-fundo.src = '../static/images/terra12.png';
+fundo.src = './images/fundo.png';
 
-const glupSound = new Audio("../static/sounds/gulp.mp3");
-const gameOver = new Audio("../static/sounds/gameover.mp3");
-const move = new Audio("../static/sounds/move.mp3");
-const musica = new Audio("../static/sounds/musica.mp3");
+const glupSound = new Audio("./sounds/gulp.mp3");
+const gameOver = new Audio("./sounds/gameover.mp3");
+const move = new Audio("./sounds/move.mp3");
+const musica = new Audio("./sounds/musica.mp3");
 
 var over = false;
 
@@ -62,7 +62,7 @@ function game(){
 
     ctx.fillStyle = '#FD8087';
     for(var i = 0; i < trail.length; i++){
-        ctx.fillRect(trail[i].x*tp, trail[i].y*tp, tp, tp);
+        ctx.fillRect(trail[i].x*tp, trail[i].y*tp, tp-1, tp-1);
         
         
 
